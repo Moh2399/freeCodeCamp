@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+body {
+  width: fit-content;
+  background-color: #000000;
+  margin: 0px auto;
+}
+
+/*1st Section*/
+.bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #282a3a;
+}
+
+.bar > h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  animation: myAnim 5s ease 0s 1 normal forwards;
+}
+.bar > a {
+  padding: 20px;
+}
+.bar .user {
+  background: url(assets/myprofile-50.png);
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 30px;
+  padding: 15px;
+}
+
+.catPhotoApp,
+.cafeMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 281px;
+  width: 281px;
+  margin: 20px;
+  border-radius: 20px;
+  animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.link:hover {
+  animation: link 0.5s ease-in-out 0s 1 normal forwards;
+}
+
+.cafeMenu {
+  background-image: radial-gradient(
+    circle,
+    #cf882f,
+    #b75a48,
+    #833f51,
+    #472d42,
+    #1a191e
+  );
+  animation: bgp 5s ease 0s 1 normal forwards;
+}
+
+.catPhotoApp {
+  background-image: radial-gradient(
+    circle,
+    #5d5436,
+    #705c49,
+    #7d665f,
+    #837373,
+    #878183
+  );
+  animation: bgp 5s ease 0s 1 normal forwards;
+}
+
+.dde {
+  width: 100%;
+  margin: auto;
+  height: 6px;
+  border: none;
+  background-color: #c69749;
+}
+
+/*2nd Section*/
+
+.description {
+  width: 80%;
+  margin: 15px auto;
+  padding: 30px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 20px;
+}
+
+.description > h3 {
+    color: #5d5436;
+    font-size: 25px;
+}
+
+.description > p {
+  margin: 15px auto;
+}
+
+.highlighter {
+    font-weight: bolder;
+    font-style: italic;
+}
+.sse {
+    background-color: #837373;
+    margin: 10px 0px;
+    width: 100%;
+    height: 3px;
+  }
+
+.github {
+  background: url(assets/github-32.png) no-repeat;
+  background-color: #5d5436;
+  width: 32px;
+  height: 32px;
+  padding: 16px;
+  margin: auto 47%;
+  border-radius: 100%;
+  border: none;
+}
+/* Keyframes*/
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bgp {
+  0% {
+    background-position: center top;
+    background-size: 100%;
+  }
+
+  100% {
+    background-position: center top;
+    background-size: 150%;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes link {
+  100% {
+    transform: scale(1.2);
+  }
+}
