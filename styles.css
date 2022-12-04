@@ -47,7 +47,7 @@ body {
 }
 
 .catPhotoApp,
-.cafeMenu, .colorSelector {
+.cafeMenu, .colorMarkers {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -93,15 +93,8 @@ body {
   animation: bgp 5s ease 0s 1 normal forwards;
 }
 
-.colorSelector {
-  background-image: radial-gradient(
-    circle,
-    #5d5436,
-    #705c49,
-    #7d665f,
-    #837373,
-    #878183
-  );
+.colorMarkers {
+  background-image: radial-gradient(circle, #ff0000, #f66d00, #d7a700, #a0d600, #00ff00);
   animation: bgp 5s ease 0s 1 normal forwards;
 }
 
