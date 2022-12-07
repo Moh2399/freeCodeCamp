@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(215deg, #8dbf6f, #abb22f, #1b60bc, #6b1bbc, #bc221b);
+    background-size: 1000% 1000%;
+    animation: bgpan 30s ease infinite;
+    color: white;
+    margin: 0px auto;
+    width: 80vw;
+    max-width: 600px;
+    min-width: 500px;
+}
+
+@keyframes bgpan {
+    0% {
+        background-position: 0% 97%
+    }
+
+    50% {
+        background-position: 100% 4%
+    }
+
+    100% {
+        background-position: 0% 97%
+    }
+}
+
+#title,
+#description {
+    margin: 40px auto;
+    text-align: center;
+    text-shadow: black 0px 2px 10px;
+}
+
+#survey-form {
+    background-color: rgba(0, 0, 0, 0.297);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#radio-label,
+#checkbox-label {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    color: rgb(118, 116, 116);
+    display: block;
+    background-color: #e8eff8a4;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 7.5px;
+    font-size: 15px;
+}
+
+
+
+select > option {
+    color: rgb(118, 116, 116);
+}
+
+#submit {
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #1ebc1b;
+    border: none;
+    border-radius: 7.5px;
+}

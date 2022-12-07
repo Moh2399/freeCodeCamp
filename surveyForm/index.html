@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Anime | Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Anime Weebs</h1>
+    <p id="description">
+        Thanks for your interest with our survey about Anime Weebs.
+    </p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name
+            <input type="text" id="name" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email
+            <input type="email" name="Email" id="email" placeholder="Enter your Email" required /></label>
+        <label for="age" id="number-label">Age(optional)
+            <input type="number" id="number" min="13" max="80" placeholder="Age" /></label>
+        <label for="anime" id="dropdown-label">
+            <p>What's your one and only Anime all time?</p>
+            <select name="role" id="dropdown">
+                <option value="">Select your favorite</option>
+                <option value="Fullmetal Alchemist">Fullmetal Alchemist</option>
+                <option value="Bleach">Bleach</option>
+                <option value="Steins;Gate">Steins;Gate</option>
+                <option value="Gintama">Gintama</option>
+                <option value="Monster">Monster</option>
+                <option value="Chainsaw Man">Chainsaw Man</option>
+                <option value="Mob Psycho 100">Mob Psycho 100</option>
+                <option value="Attack on Titan">Attack on Titan</option>
+                <option value="Spy x Family">Spy x Family</option>
+                <option value="One Piece">One Piece</option>
+                <option value="Cyberpunk: Edgerunners">Cyberpunk: Edgerunners</option>
+                <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+                <option value="Death Note">Death Note</option>
+                <option value="Naruto">Naruto</option>
+                <option value="Others">Others</option>
+            </select>
+            <br>
+            <p>If not in the list please fill: <input type="text" placeholder="your favorite anime name"></p>
+        </label>
+        <label for="recommendation" id="radio-label">
+            <p>Would you recommend your friends or other to watch anime?</p>
+            <br>
+                <input type="radio" name="recommend" id="recommendation" value="1"><label> Definitely</label><br><br>
+                <input type="radio" name="recommend" id="recommendation" value="2"><label> Maybe</label><br><br>
+                <input type="radio" name="recommend" id="recommendation" value="3"><label> No</label>
+        </label>
+        <label for="checkbox" id="checkbox-label">
+            <p>Please select any five favorite anime</p>
+            <br>
+            <input type="checkbox" name="anime" id="" value="Naruto"> Naruto <br>
+            <input type="checkbox" name="anime" id="" value="Bleach"> Bleach <br>
+            <input type="checkbox" name="anime" id="" value="Stein;Gate"> Stein;Gate <br>
+            <input type="checkbox" name="anime" id="" value="Monster"> Monster <br>
+            <input type="checkbox" name="anime" id="" value="Tokyo Ghoul"> Tokyo Ghoul <br>
+            <input type="checkbox" name="anime" id="" value="Death Note"> Death Note <br>
+            <input type="checkbox" name="anime" id="" value="Gintama"> Gintama <br>
+            <input type="checkbox" name="anime" id="" value="Hunter x Hunter"> Hunter x Hunter <br>
+            <input type="checkbox" name="anime" id="" value="The Berserker"> The Berserker <br>
+            <input type="checkbox" name="anime" id="" value="Cyberpunk 2077: Edgerunner"> Cyberpunk 2077: Edgerunner <br>
+            <input type="checkbox" name="anime" id="" value="Baki"> Baki <br>
+            <input type="checkbox" name="anime" id="" value="Kengan Ashura"> Kengan Ashura <br>
+        </label>
+        <textarea name="comment" id="commentbox" cols="5" rows="5"
+            placeholder="Add your comments about out anime selection here" maxlength="50" minlength="20"></textarea>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+
+</html>
