@@ -47,7 +47,7 @@ body {
 }
 
 .catPhotoApp,
-.cafeMenu, .colorMarkers {
+.cafeMenu, .colorMarkers, .surveyForm{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -67,35 +67,6 @@ body {
 
 .link:hover {
   animation: link 0.5s ease-in-out 0s 1 normal forwards;
-}
-
-.catPhotoApp {
-  background-image: radial-gradient(
-    circle,
-    #5d5436,
-    #705c49,
-    #7d665f,
-    #837373,
-    #878183
-  );
-  animation: bgp 5s ease 0s 1 normal forwards;
-}
-
-.cafeMenu {
-  background-image: radial-gradient(
-    circle,
-    #cf882f,
-    #b75a48,
-    #833f51,
-    #472d42,
-    #1a191e
-  );
-  animation: bgp 5s ease 0s 1 normal forwards;
-}
-
-.colorMarkers {
-  background-image: radial-gradient(circle, #ff0000, #f66d00, #d7a700, #a0d600, #00ff00);
-  animation: bgp 5s ease 0s 1 normal forwards;
 }
 
 .dde {
