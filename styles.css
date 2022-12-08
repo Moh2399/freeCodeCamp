@@ -22,7 +22,6 @@ body {
 }
 
 .bar > h1 {
-  text-align: center;
   padding: 20px;
   font-size: 40px;
   animation: myAnim 5s ease 0s 1 normal forwards;
@@ -39,23 +38,21 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-  margin: 30px;
-  padding: 15px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .catPhotoApp,
 .cafeMenu, .colorMarkers, .surveyForm{
   display: flex;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  height: 281px;
-  width: 281px;
-  margin: 20px;
-  border-radius: 20px;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
   animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
@@ -67,6 +64,8 @@ body {
 
 .link:hover {
   animation: link 0.5s ease-in-out 0s 1 normal forwards;
+  opacity: 1;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
 }
 
 .dde {
@@ -80,7 +79,9 @@ body {
 /*2nd Section*/
 
 .description {
-  width: 80%;
+  width: 80vw;
+  min-width: 300px;
+  max-width: 600px;
   margin: 15px auto;
   padding: 30px;
   background-color: rgb(26, 26, 26);
