@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+    color: rgba(0, 255, 0, 0.644);
+    text-shadow: 1px 1px 0px #120fee;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: rgba(241, 144, 7, 0.616);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(30, 0, 255);
+}
+
+#main {
+    width: 75%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(91, 86, 86, 0.203);
+}
+
+#main>#title {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+#title>h1 {
+    font-size: 40px;
+}
+
+#title>p {
+    margin-top: 25px;
+}
+
+#img-div>#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#img-div>#img-caption {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+hr {
+    border: 0.5px solid;
+    margin: 10px 0px;
+}
+
+#tribute-info {
+    width: 90%;
+    margin: auto;
+}
+
+#tribute-info h2 {
+    margin-top: 40px;
+}
+
+#tribute-info>article {
+    text-align: justify;
+}
+
+#movies {
+    list-style: none
+}
+
+#movies li {
+    border-bottom: 1px solid rgba(196, 240, 18, 0.426);
+    padding: 10px;
+}
+
+#movies .right {
+    float: right;
+}
+
+#tribute-info p{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#tribute-link {
+    color: red;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #2323bbb0;
+}
